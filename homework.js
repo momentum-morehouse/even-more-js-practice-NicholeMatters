@@ -39,19 +39,21 @@ product(4, 689);
 // call your function on this array of numbers [4, 37, 18, 29, 52, 103, 22]
 
 function evens(array) {
-  let evenArray = [];
-  let remainder = nummber % 2;
+  //let evenArray = [];
+  let remainder = number % 2;
   for (let number of array) {
     if (remainder === 0) {
-      evenArray.push(number);
+      //evenArray.push(number);
+      return number;
       console.log(number);
-    } else {
-      return false;
+    }
+    else {
+      return;
     }
   }
 }
 
-evens[4, 37, 18, 29, 52, 103, 22]
+evens(4, 37, 18, 29, 52, 103, 22);
 
 
 //Problem 3
@@ -73,16 +75,12 @@ five("pineapple");
 // call your function on this array ["basin", "pit", "cheese", "bun", "river"]
 
 
-function shortWords (array){
+function shortWords(array) {
   let newArray = [];
-  for (let word of array){
-    if (array.length <= 3){
-
-
-for (let number of array){
-  if (number.length <= 3){
-    evenArray.push(number.length);
-  }else
+  for (let word of array) {
+    if (word.length <= 3) {
+      newArray.push(word.length);
+    } else{
+      return ;
     }
-  }
 }
